@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-//const User = require("./User")
+const User = require("./User")
 
 const articleSchema = new mongoose.Schema(
     {
@@ -10,8 +10,8 @@ const articleSchema = new mongoose.Schema(
         contenu: {
             type: String,
             required: true,
-        }/*,
-        idAuthor: {
+        },/*
+        login: {
             type: mongoose.Schema.Types.ObjectId,
             required: true,
             ref: User

@@ -65,7 +65,7 @@ return(
         />
       </div>
     </form>
-    {error!=null ? <p className="alert alert-danger">{error}</p> : <div></div>}
+    {error!=null ? <p className="alert alert-danger">"Veuillez vous connecter</p> : <div></div>}
   
   </div>
   

@@ -41,8 +41,8 @@ export default function Home() {
             return(
                 <a className="pe-5 ps-5 text-decoration-none text-reset" key={index} href={`/all/${article._id}`}>
                     <h3 className="text-capitalize">{article.titre}</h3>
-                    <p>{article.contenu.slice(0, 50)}...</p>
-                    <p>publié le {new Date(article.createdAt).toLocaleDateString()} - écrit par {article.loginAuthor.charAt(0).toUpperCase()+article.loginAuthor.slice(1)}</p>
+                    <p>{article.contenu.slice(0, 300)}...</p>
+                {/* <p>publié le {new Date(article.createdAt).toLocaleDateString()} - écrit par {article.loginAuthor.charAt(0).toUpperCase()+article.loginAuthor.slice(1)}</p> */}
                 </a>
             )
         })}
