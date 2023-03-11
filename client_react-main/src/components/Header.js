@@ -13,6 +13,7 @@ export default function Header() {
     }
    
   }, []);
+  
 
   function handleLogout() {
     localStorage.removeItem("token");
